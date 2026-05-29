@@ -1,0 +1,15 @@
+vlog keccak_f_postsyn.v keccak_tb.sv -work work_swa
+vsim -c -t ns -L vsimlib work_swa.keccak_tb -voptargs=+acc=np+keccak_f
+in vsim:
+vcd files "keccak_f.vcd"
+vcd add -file keccak_f.vcd -ports /keccak_tb/dut/*
+vcd add -file keccak_f.vcd -internal /keccak_tb/dut/*
+run -all
+
+pt_shell -f scripts/pt_analysis.tcl
+report_power > power_before_swa.txt
+
+read_vcd ./saved/keccak_f/simulation/keccak_f.vcd -strip_path /keccak_tb/dut -zero_delay
+set_power_clock_scaling -period 10 [get_clock]
+set power_enable_clock_scaling true
+report_power > power_after_swa.txt

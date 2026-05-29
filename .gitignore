@@ -1,0 +1,5 @@
+rtl/siphash_core/sim/vsimlib
+tech/STcmos65/vsimlib
+tech/STcmos65/CORE65LPHVT_nom_1.20V_25C.db
+tech/STcmos65/CORE65LPLVT_nom_1.20V_25C.db
+tech/STcmos65/CORE65LPSVT_nom_1.20V_25C.db

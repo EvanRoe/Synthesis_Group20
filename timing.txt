@@ -1,0 +1,113 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : siphash_core
+Version: V-2023.12-SP1
+Date   : Fri May 29 18:33:34 2026
+****************************************
+
+
+  Startpoint: add_293/clk_r_REG427_S10
+               (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: clk_r_REG253_S6
+               (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.050000   0.050000
+  add_293/clk_r_REG427_S10/CP (HS65_LS_DFPRQX4)       0.000000   0.050000 r
+  add_293/clk_r_REG427_S10/Q (HS65_LS_DFPRQX4)        0.130090   0.180090 f
+  add_293/U1_51/CO (HS65_LS_FA1X9)                    0.097795   0.277885 f
+  add_293/U1_52/CO (HS65_LS_FA1X4)                    0.100643   0.378528 f
+  add_293/U1_53/S0 (HS65_LS_FA1X4)                    0.169622   0.548150 r
+  U2168/Z (HS65_LSS_XNOR2X6)                          0.062335   0.610485 f
+  U2093/Z (HS65_LS_OA212X4)                           0.124435   0.734920 f
+  U1574/Z (HS65_LS_IVX4)                              0.055893   0.790813 r
+  U1614/Z (HS65_LSS_XOR2X3)                           0.109121   0.899935 f
+  add_293/U1_2/CO (HS65_LS_FA1X9)                     0.128211   1.028146 f
+  add_293/U1_3/CO (HS65_LS_FA1X18)                    0.082414   1.110559 f
+  add_293/U34/Z (HS65_LS_NAND2X7)                     0.022829   1.133388 r
+  U1569/Z (HS65_LS_NAND3X6)                           0.041464   1.174853 f
+  add_293/U1_5/CO (HS65_LS_FA1X4)                     0.130171   1.305024 f
+  add_293/U16/Z (HS65_LS_NAND2X7)                     0.042931   1.347955 r
+  add_293/U14/Z (HS65_LS_NAND3X13)                    0.045557   1.393511 f
+  add_293/U64/Z (HS65_LS_NAND2X7)                     0.032754   1.426266 r
+  add_293/U10/Z (HS65_LS_NAND3X13)                    0.040604   1.466869 f
+  add_293/U9/Z (HS65_LS_NAND2X7)                      0.023990   1.490859 r
+  add_293/U24/Z (HS65_LS_AND2X9)                      0.048924   1.539783 r
+  add_293/U30/Z (HS65_LS_NAND2X7)                     0.027578   1.567361 f
+  add_293/U1_9/CO (HS65_LS_FA1X9)                     0.087039   1.654399 f
+  add_293/U1_10/CO (HS65_LS_FA1X9)                    0.104534   1.758933 f
+  add_293/U1_11/CO (HS65_LSS1_FA1X35)                 0.064482   1.823415 f
+  add_293/U8/Z (HS65_LS_NAND2X2)                      0.030307   1.853722 r
+  add_293/U50/Z (HS65_LS_OR3ABCX27)                   0.096575   1.950298 f
+  add_293/U1_13/CO (HS65_LSS1_FA1X35)                 0.054268   2.004566 f
+  add_293/U1_14/CO (HS65_LSS1_FA1X35)                 0.051487   2.056053 f
+  add_293/U1_15/CO (HS65_LSS1_FA1X35)                 0.051585   2.107638 f
+  add_293/U1_16/CO (HS65_LSS1_FA1X35)                 0.048062   2.155700 f
+  add_293/U1_17/CO (HS65_LS_FA1X18)                   0.067876   2.223576 f
+  U4045/Z (HS65_LS_NAND2X2)                           0.034658   2.258234 r
+  add_293/U46/Z (HS65_LS_NAND3X3)                     0.056480   2.314714 f
+  add_293/U1_19/CO (HS65_LS_FA1X4)                    0.131198   2.445912 f
+  add_293/U1_20/CO (HS65_LS_FA1X18)                   0.088948   2.534860 f
+  add_293/U1_21/CO (HS65_LS_FA1X18)                   0.074754   2.609614 f
+  add_293/U53/Z (HS65_LS_NAND2X2)                     0.036351   2.645965 r
+  add_293/U55/Z (HS65_LS_OR3ABCX27)                   0.097610   2.743574 f
+  add_293/U1_23/CO (HS65_LSS1_FA1X21)                 0.074922   2.818496 f
+  add_293/U73/Z (HS65_LS_NAND2X5)                     0.024536   2.843032 r
+  add_293/U74/Z (HS65_LS_NAND3X5)                     0.045864   2.888896 f
+  add_293/U1_25/CO (HS65_LS_FA1X9)                    0.095725   2.984621 f
+  add_293/U1_26/CO (HS65_LS_FA1X9)                    0.082524   3.067144 f
+  add_293/U1_27/CO (HS65_LS_FA1X4)                    0.105146   3.172290 f
+  add_293/U1_28/CO (HS65_LS_FA1X9)                    0.088937   3.261227 f
+  add_293/U1_29/CO (HS65_LS_FA1X4)                    0.105329   3.366556 f
+  add_293/U1_30/CO (HS65_LS_FA1X9)                    0.105781   3.472337 f
+  add_293/U20/Z (HS65_LS_NAND2X7)                     0.028463   3.500801 r
+  U4044/Z (HS65_LS_NAND3X6)                           0.037562   3.538363 f
+  add_293/U1_32/CO (HS65_LS_FA1X4)                    0.118648   3.657010 f
+  add_293/U1_33/CO (HS65_LS_FA1X18)                   0.097875   3.754885 f
+  add_293/U1_34/CO (HS65_LSS1_FA1X35)                 0.060491   3.815377 f
+  add_293/U58/Z (HS65_LS_NAND2X14)                    0.017849   3.833226 r
+  U4043/Z (HS65_LS_NAND3X19)                          0.034606   3.867832 f
+  add_293/U61/Z (HS65_LS_NAND2X7)                     0.033537   3.901370 r
+  U4042/Z (HS65_LS_NAND3AX19)                         0.045187   3.946557 f
+  add_293/U6/Z (HS65_LS_NAND2X14)                     0.027354   3.973911 r
+  add_293/U4/Z (HS65_LS_NAND3X19)                     0.044762   4.018673 f
+  add_293/U1_38/CO (HS65_LSS1_FA1X35)                 0.063580   4.082253 f
+  add_293/U39/Z (HS65_LS_NAND2X14)                    0.017789   4.100042 r
+  add_293/U41/Z (HS65_LS_NAND3X19)                    0.032542   4.132584 f
+  add_293/U1_40/CO (HS65_LS_FA1X18)                   0.074712   4.207296 f
+  add_293/U1_41/CO (HS65_LS_FA1X9)                    0.086518   4.293814 f
+  add_293/U1_42/CO (HS65_LS_FA1X18)                   0.088850   4.382664 f
+  add_293/U1_43/CO (HS65_LSS1_FA1X35)                 0.061296   4.443961 f
+  add_293/U1_44/CO (HS65_LSS1_FA1X35)                 0.051446   4.495407 f
+  add_293/U1_45/CO (HS65_LSS1_FA1X35)                 0.048909   4.544316 f
+  add_293/U1_46/CO (HS65_LSS1_FA1X9)                  0.065876   4.610192 f
+  add_293/U1_47/CO (HS65_LS_FA1X9)                    0.102338   4.712531 f
+  add_293/U1_48/S0 (HS65_LSS1_FA1X35)                 0.076605   4.789135 f
+  U3998/Z (HS65_LSS_XNOR2X3)                          0.062854   4.851989 r
+  U3290/Z (HS65_LS_OAI212X5)                          0.057840   4.909829 f
+  clk_r_REG253_S6/D (HS65_LS_DFPRQX4)                 0.000015   4.909844 f
+  data arrival time                                              4.909844
+
+  clock clk (rise edge)                               5.000000   5.000000
+  clock network delay (ideal)                         0.050000   5.050000
+  clock reconvergence pessimism                       0.000000   5.050000
+  clock uncertainty                                   -0.050000  5.000000
+  clk_r_REG253_S6/CP (HS65_LS_DFPRQX4)                           5.000000 r
+  library setup time                                  -0.088735  4.911265
+  data required time                                             4.911265
+  ------------------------------------------------------------------------------
+  data required time                                             4.911265
+  data arrival time                                              -4.909844
+  ------------------------------------------------------------------------------
+  slack (MET)                                                    0.001421
+
+
+1

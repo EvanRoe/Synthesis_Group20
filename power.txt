@@ -1,0 +1,36 @@
+Warning: Neither event file or switching activity data present for power estimation. The command will propagate switching activity values for power calculation.  (PWR-246)
+Information: Running switching activity propagation with 4 threads!
+Information: Running averaged power analysis... (PWR-601)
+Information: Running power calculation with 4 threads. (PWR-602)
+****************************************
+Report : Averaged Power
+Design : siphash_core
+Version: V-2023.12-SP1
+Date   : Fri May 29 18:33:34 2026
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network           5.132e-04    0.0000    0.0000 5.132e-04 (36.87%)  i
+register                1.193e-04 5.814e-05 1.868e-07 1.776e-04 (12.76%)  
+combinational           2.369e-04 4.638e-04 3.295e-07 7.010e-04 (50.37%)  
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power  = 5.220e-04   (37.50%)
+  Cell Internal Power  = 8.694e-04   (62.46%)
+  Cell Leakage Power   = 5.163e-07   ( 0.04%)
+                         ---------
+Total Power            = 1.392e-03  (100.00%)
+
+1

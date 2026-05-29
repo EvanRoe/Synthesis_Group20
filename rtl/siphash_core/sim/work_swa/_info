@@ -1,0 +1,88 @@
+m255
+K4
+z2
+!s12c _opt1
+Z0 !s99 nomlopt
+!s12c _opt
+R0
+!s11f vlog 2023.4 2023.10, Oct  9 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/space/s362481/WORK_Group20/rtl/siphash_core/sim
+T_opt
+!s110 1780070837
+VYjL4ahC6^S`38mBZSMJNo3
+Z2 04 15 4 work tb_siphash_core fast 0
+=1-000ae431a4f1-6a19b9b4-bae24-3c0066
+R0
+Z3 !s12f OEM100
+Z4 !s12b OEM100
+Z5 !s124 OEM100
+o-quiet -auto_acc_if_foreign -work work_swa -L vsimlib +acc=np+sipash_core
+Z6 tCvgOpt 0
+n@_opt
+Z7 OE;O;2023.4;77
+R1
+T_opt1
+!s110 1780071054
+V_F^FNGQLWV`H=`VWVCV>Q0
+R2
+=1-000ae431a4f1-6a19ba8d-c09dd-3c04f6
+R0
+R3
+R4
+R5
+o-quiet -auto_acc_if_foreign -work work_swa -L vsimlib +acc=np+siphash_core
+R6
+n@_opt1
+R7
+vsiphash_core
+Z8 2siphash_core_postsyn.v|tb_siphash_core.v
+Z9 !s110 1780071048
+!i10b 1
+!s100 Z5lafNjE8XHzAKBU]l`>c0
+IE_Nf5_M]:NAITObmEfb:=0
+R1
+w1780070714
+8siphash_core_postsyn.v
+Fsiphash_core_postsyn.v
+!i122 1
+L0 8 7407
+Z10 VDg1SIo80bB@j0V0VzS_@n1
+Z11 OE;L;2023.4;77
+r1
+!s85 0
+31
+Z12 !s108 1780071047.000000
+Z13 !s107 tb_siphash_core.v|siphash_core_postsyn.v|
+Z14 !s90 siphash_core_postsyn.v|tb_siphash_core.v|-work|work_swa|
+!i113 0
+Z15 o-work work_swa -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
+vtb_siphash_core
+R8
+R9
+!i10b 1
+!s100 9k72[>2cf:74V9RROaS;z0
+I5li?L<1<Q]am6^83_[9WE1
+R1
+w1780070580
+8tb_siphash_core.v
+Ftb_siphash_core.v
+!i122 1
+L0 40 329
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R6
