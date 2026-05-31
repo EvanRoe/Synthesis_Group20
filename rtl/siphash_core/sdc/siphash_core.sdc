@@ -1,6 +1,6 @@
 set clockName clk
 set rstName areset
-set clockPeriod 5
+set clockPeriod 7
 
 ;# Set-up Clock
 create_clock -period $clockPeriod $clockName

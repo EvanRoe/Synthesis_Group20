@@ -1,6 +1,6 @@
 ###################################################################
 
-# Created by write_sdc on Fri May 29 17:55:08 2026
+# Created by write_sdc on Sun May 31 19:19:49 2026
 
 ###################################################################
 set sdc_version 2.1
@@ -684,13 +684,13 @@ set_max_transition 0.1 [get_ports {siphash_word[0]}]
 set_max_transition 0.1 [get_ports siphash_word_valid]
 set_ideal_network [get_ports clk]
 set_ideal_network [get_ports areset]
-create_clock [get_ports clk]  -period 5  -waveform {0 2.5}
+create_clock [get_ports clk]  -period 7  -waveform {0 3.5}
 set_clock_latency 0.05  [get_clocks clk]
 set_clock_uncertainty 0.05  [get_clocks clk]
-set_clock_transition -max -rise 0.05 [get_clocks clk]
-set_clock_transition -max -fall 0.05 [get_clocks clk]
-set_clock_transition -min -rise 0.05 [get_clocks clk]
 set_clock_transition -min -fall 0.05 [get_clocks clk]
+set_clock_transition -min -rise 0.05 [get_clocks clk]
+set_clock_transition -max -fall 0.05 [get_clocks clk]
+set_clock_transition -max -rise 0.05 [get_clocks clk]
 set_min_delay 0.2  -from [list [get_ports clk] [get_ports areset] [get_ports initalize]          \
 [get_ports compress] [get_ports finalize] [get_ports long] [get_ports          \
 {compression_rounds[3]}] [get_ports {compression_rounds[2]}] [get_ports        \
@@ -1152,3 +1152,85 @@ set_output_delay -clock clk  0.15  [get_ports {siphash_word[2]}]
 set_output_delay -clock clk  0.15  [get_ports {siphash_word[1]}]
 set_output_delay -clock clk  0.15  [get_ports {siphash_word[0]}]
 set_output_delay -clock clk  0.15  [get_ports siphash_word_valid]
+set_clock_gating_check -rise -setup 0 [get_cells                               \
+clk_gate_v0_reg_reg_0/main_gate]
+set_clock_gating_check -fall -setup 0 [get_cells                               \
+clk_gate_v0_reg_reg_0/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells clk_gate_v0_reg_reg_0/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells clk_gate_v0_reg_reg_0/main_gate]
+set_clock_gating_check -rise -setup 0 [get_cells clk_gate_v0_reg_reg/main_gate]
+set_clock_gating_check -fall -setup 0 [get_cells clk_gate_v0_reg_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells clk_gate_v0_reg_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells clk_gate_v0_reg_reg/main_gate]
+set_clock_gating_check -rise -setup 0 [get_cells                               \
+clk_gate_v1_reg_reg_0/main_gate]
+set_clock_gating_check -fall -setup 0 [get_cells                               \
+clk_gate_v1_reg_reg_0/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells clk_gate_v1_reg_reg_0/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells clk_gate_v1_reg_reg_0/main_gate]
+set_clock_gating_check -rise -setup 0 [get_cells clk_gate_v1_reg_reg/main_gate]
+set_clock_gating_check -fall -setup 0 [get_cells clk_gate_v1_reg_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells clk_gate_v1_reg_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells clk_gate_v1_reg_reg/main_gate]
+set_clock_gating_check -rise -setup 0 [get_cells                               \
+clk_gate_v2_reg_reg_0/main_gate]
+set_clock_gating_check -fall -setup 0 [get_cells                               \
+clk_gate_v2_reg_reg_0/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells clk_gate_v2_reg_reg_0/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells clk_gate_v2_reg_reg_0/main_gate]
+set_clock_gating_check -rise -setup 0 [get_cells clk_gate_v2_reg_reg/main_gate]
+set_clock_gating_check -fall -setup 0 [get_cells clk_gate_v2_reg_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells clk_gate_v2_reg_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells clk_gate_v2_reg_reg/main_gate]
+set_clock_gating_check -rise -setup 0 [get_cells                               \
+clk_gate_v3_reg_reg_0/main_gate]
+set_clock_gating_check -fall -setup 0 [get_cells                               \
+clk_gate_v3_reg_reg_0/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells clk_gate_v3_reg_reg_0/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells clk_gate_v3_reg_reg_0/main_gate]
+set_clock_gating_check -rise -setup 0 [get_cells clk_gate_v3_reg_reg/main_gate]
+set_clock_gating_check -fall -setup 0 [get_cells clk_gate_v3_reg_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells clk_gate_v3_reg_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells clk_gate_v3_reg_reg/main_gate]
+set_clock_gating_check -rise -setup 0 [get_cells                               \
+clk_gate_siphash_word0_reg_reg_0/main_gate]
+set_clock_gating_check -fall -setup 0 [get_cells                               \
+clk_gate_siphash_word0_reg_reg_0/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+clk_gate_siphash_word0_reg_reg_0/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+clk_gate_siphash_word0_reg_reg_0/main_gate]
+set_clock_gating_check -rise -setup 0 [get_cells                               \
+clk_gate_siphash_word0_reg_reg/main_gate]
+set_clock_gating_check -fall -setup 0 [get_cells                               \
+clk_gate_siphash_word0_reg_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+clk_gate_siphash_word0_reg_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+clk_gate_siphash_word0_reg_reg/main_gate]
+set_clock_gating_check -rise -setup 0 [get_cells                               \
+clk_gate_siphash_word1_reg_reg_0/main_gate]
+set_clock_gating_check -fall -setup 0 [get_cells                               \
+clk_gate_siphash_word1_reg_reg_0/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+clk_gate_siphash_word1_reg_reg_0/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+clk_gate_siphash_word1_reg_reg_0/main_gate]
+set_clock_gating_check -rise -setup 0 [get_cells                               \
+clk_gate_siphash_word1_reg_reg/main_gate]
+set_clock_gating_check -fall -setup 0 [get_cells                               \
+clk_gate_siphash_word1_reg_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells                                \
+clk_gate_siphash_word1_reg_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells                                \
+clk_gate_siphash_word1_reg_reg/main_gate]
+set_clock_gating_check -rise -setup 0 [get_cells                               \
+clk_gate_mi_reg_reg_0/main_gate]
+set_clock_gating_check -fall -setup 0 [get_cells                               \
+clk_gate_mi_reg_reg_0/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells clk_gate_mi_reg_reg_0/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells clk_gate_mi_reg_reg_0/main_gate]
+set_clock_gating_check -rise -setup 0 [get_cells clk_gate_mi_reg_reg/main_gate]
+set_clock_gating_check -fall -setup 0 [get_cells clk_gate_mi_reg_reg/main_gate]
+set_clock_gating_check -rise -hold 0 [get_cells clk_gate_mi_reg_reg/main_gate]
+set_clock_gating_check -fall -hold 0 [get_cells clk_gate_mi_reg_reg/main_gate]

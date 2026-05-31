@@ -1,8 +1,6 @@
 # vsim -c -t ns -L vsimlib work_swa.tb_siphash_core -voptargs="+acc=np+siphash_core" 
-# Start time: 18:10:53 on May 29,2026
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Start time: 19:24:13 on May 31,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
 # //  Questa Sim
 # //  Version 2023.4 linux Oct  9 2023
 # //
@@ -120,7 +118,6 @@
 # Loading vsimlib.HS65_LS_AOI21X2(fast)
 # Loading vsimlib.HS65_LS_NAND3AX3(fast)
 # Loading vsimlib.HS65_LS_NAND3AX19(fast)
-# invalid command name "vcdfiles"
 #    -- Test of siphash core started --
 # Outputs:
 # ready = 1
@@ -157,5 +154,5 @@
 # Tests failed:      0
 # ** Note: $finish    : tb_siphash_core.v(365)
 #    Time: 1296 ns  Iteration: 0  Instance: /tb_siphash_core
-# End time: 18:12:19 on May 29,2026, Elapsed time: 0:01:26
-# Errors: 0, Warnings: 1
+# End time: 19:24:26 on May 31,2026, Elapsed time: 0:00:13
+# Errors: 0, Warnings: 0

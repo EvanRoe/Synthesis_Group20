@@ -1,0 +1,19 @@
+cd rtl/siphash_core/sim/
+vlog siphash_core_postsyn.v tb_siphash_core.v -work work_swa
+vsim -c -t ns -L vsimlib work_swa.tb_siphash_core -voptargs=+acc=np+siphash_core
+in vsim:
+vcd files "siphash_core.vcd"
+vcd add -file siphash_core.vcd -ports /tb_siphash_core/dut/*
+vcd add -file siphash_core.vcd -internal /tb_siphash_core/dut/*
+run -all
+
+cd back to parent
+pt_shell -f scripts/pt_analysis.tcl
+
+"This is inside pt_analysis.tcl"
+report_power > power_before_swa.txt
+
+read_vcd ./saved/keccak_f/simulation/keccak_f.vcd -strip_path /keccak_tb/dut -zero_delay
+set_power_clock_scaling -period 10 [get_clock]
+set power_enable_clock_scaling true
+report_power > power_after_swa.txt

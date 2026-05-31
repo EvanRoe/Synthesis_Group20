@@ -40,9 +40,10 @@ o-quiet -auto_acc_if_foreign -work work_swa -L vsimlib +acc=np+siphash_core
 R6
 n@_opt1
 R7
+R1
 vsiphash_core
 Z8 2siphash_core_postsyn.v|tb_siphash_core.v
-Z9 !s110 1780071048
+Z9 !s110 1780248248
 !i10b 1
 !s100 Z5lafNjE8XHzAKBU]l`>c0
 IE_Nf5_M]:NAITObmEfb:=0
@@ -50,18 +51,18 @@ R1
 w1780070714
 8siphash_core_postsyn.v
 Fsiphash_core_postsyn.v
-!i122 1
+!i122 6
 L0 8 7407
 Z10 VDg1SIo80bB@j0V0VzS_@n1
 Z11 OE;L;2023.4;77
 r1
 !s85 0
 31
-Z12 !s108 1780071047.000000
-Z13 !s107 tb_siphash_core.v|siphash_core_postsyn.v|
-Z14 !s90 siphash_core_postsyn.v|tb_siphash_core.v|-work|work_swa|
+Z12 !s108 1780248248.000000
+!s107 tb_siphash_core.v|siphash_core_postsyn.v|
+Z13 !s90 siphash_core_postsyn.v|tb_siphash_core.v|-work|work_swa|
 !i113 0
-Z15 o-work work_swa -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z14 o-work work_swa -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R6
 vtb_siphash_core
 R8
@@ -73,7 +74,7 @@ R1
 w1780070580
 8tb_siphash_core.v
 Ftb_siphash_core.v
-!i122 1
+!i122 6
 L0 40 329
 R10
 R11
@@ -81,8 +82,8 @@ r1
 !s85 0
 31
 R12
+Z15 !s107 tb_siphash_core.v|siphash_core_postsyn.v|
 R13
-R14
 !i113 0
-R15
+R14
 R6

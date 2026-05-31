@@ -60,8 +60,8 @@ update_timing -full
 report_power > power.txt
 report_timing > timing.txt
 
-set area [get_attribute $current_design area]
-
+set area [get_attribute [current_design] area]
+puts $area
 
 
 read_vcd ./rtl/siphash_core/sim/siphash_core.vcd -strip_path /tb_siphash_core/dut -zero_delay
@@ -70,4 +70,4 @@ set power_enable_clock_scaling true
 report_power > power_after_swa.txt
 
 
-#exit
+exit

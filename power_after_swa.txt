@@ -1,70 +1,16 @@
-Warning: The net v1_reg[1] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[5] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[60] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[8] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[61] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[9] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[62] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[63] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[10] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[11] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[12] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[13] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[14] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[15] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[16] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[17] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[18] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[19] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[20] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[21] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[22] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[23] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[24] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[25] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[26] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[27] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[28] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[29] has no base clock for power calculation. (PWR-406)
+Warning: The net siphash_word_new[0] has no base clock for power calculation. (PWR-406)
+Warning: The net siphash_word_new[1] has no base clock for power calculation. (PWR-406)
 Warning: The net add_293/carry[1] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[30] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[31] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[32] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[33] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[34] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[35] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[36] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[37] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[38] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[39] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[40] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[41] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[42] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[43] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[44] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[45] has no base clock for power calculation. (PWR-406)
 Warning: The net loop_ctr_reg[3] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[46] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[47] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[48] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[49] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[50] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[51] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[52] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[53] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[54] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[55] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[56] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[57] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[58] has no base clock for power calculation. (PWR-406)
-Warning: The net v1_reg[59] has no base clock for power calculation. (PWR-406)
+Warning: The net add_286/carry[1] has no base clock for power calculation. (PWR-406)
+Warning: The net siphash_word_new[63] has no base clock for power calculation. (PWR-406)
 Information: Running averaged power analysis... (PWR-601)
 Information: Running power calculation with 4 threads. (PWR-602)
 ****************************************
 Report : Averaged Power
 Design : siphash_core
 Version: V-2023.12-SP1
-Date   : Fri May 29 18:33:34 2026
+Date   : Sun May 31 19:24:46 2026
 ****************************************
 
 
@@ -77,18 +23,18 @@ Date   : Fri May 29 18:33:34 2026
                         Internal  Switching  Leakage    Total
 Power Group             Power     Power      Power      Power   (     %)  Attrs
 --------------------------------------------------------------------------------
-clock_network           1.251e-03    0.0000    0.0000 1.251e-03 (74.71%)  i
-register                6.589e-05 4.872e-05 2.098e-07 1.148e-04 ( 6.86%)  
-combinational           9.317e-05 2.151e-04 3.458e-07 3.086e-04 (18.44%)  
+clock_network           2.418e-04 1.198e-04 9.544e-10 3.617e-04 (50.89%)  i
+register                6.233e-05 3.318e-05 1.654e-07 9.568e-05 (13.46%)  
+combinational           8.494e-05 1.681e-04 3.047e-07 2.534e-04 (35.65%)  
 sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
 memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
 io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
 black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
 
-  Net Switching Power  = 2.638e-04   (15.76%)
-  Cell Internal Power  = 1.410e-03   (84.21%)
-  Cell Leakage Power   = 5.556e-07   ( 0.03%)
+  Net Switching Power  = 3.211e-04   (45.18%)
+  Cell Internal Power  = 3.891e-04   (54.75%)
+  Cell Leakage Power   = 4.711e-07   ( 0.07%)
                          ---------
-Total Power            = 1.674e-03  (100.00%)
+Total Power            = 7.107e-04  (100.00%)
 
 1
