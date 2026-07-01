@@ -62,7 +62,7 @@ Dynamic power (mW) & 0.7102 \\
 \end{table}
 
 \paragraph{Discussion.} Clock gating is a technique for power saving, so its main effect will be on leakage and dynamic power. In this case, both those metrics have reduced, dynamic power by 0.57 mW (44 per cent) and leakage power by 0.25e-04 mW (5 per cent). By stopping the clock to unchanging sections of the design dynamic power is drastically reduced since we are no longer unnecessarily powering the clock. Leakage power also decreases by the fact that keeping transistors completely off saves power compared to transistors that are off but only between abundant toggling. It only saves a bit of power however, because the dynamic power is the main target of clock gating. 
-The slack will be negatively affected by clock gating, because we are adding more hardware in the clock path (clock gates), and in this case the slack decreased by 0.295 ns (75 per cent).
+The slack will be negatively affected by clock gating, because we are adding more hardware in the clock path (clock gates), and in this case the slack decreased by 0.295 ns (75 per cent). The reduction in area could be attributed to removing feedback multiplexer loops for load-enable registers. If this design has a lot of registers, this could result in a significant area saving.  
 % Discuss and motivate the impact of clock gating on PPA metrics.
 
 \subsection{Clock-Gating + Multi-VT}
